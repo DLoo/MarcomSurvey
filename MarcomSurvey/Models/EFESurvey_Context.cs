@@ -13,7 +13,7 @@ namespace MarcomSurvey.Models
         public EFESurvey_Context()
             : base("name=EFESurvey")
         {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<EFESurvey_Context, MarcomSurvey.Migrations.Configuration>("EFESurvey"));
+            //Database.SetInitializer(new MigrateDatabaseToLatestVersion<EFESurvey_Context, MarcomSurvey.Migrations.Configuration>("EFESurvey"));
             
         }
 

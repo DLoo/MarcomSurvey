@@ -47,7 +47,7 @@ namespace MarcomSurvey.Models
                 SurveyName = this.SurveyName,
                 Brand = this.Brand,
                 EmailFrom = EmailFrom,
-                EmailTo = EmailTo,
+                EmailTo = EmailTo, 
                 EmailCc = EmailCc
             };
 

@@ -35,8 +35,8 @@ namespace MarcomSurvey.Controllers
                 Brand = brand,
                 SurveyName = surveyName,
                 FormData = formData,
-                EmailTo = /*brand + */"donaldloo@amesunited.com",
-                EmailFrom = "donaldloo@amesunited.com",
+                EmailTo = brand + "_" + "Survey@eurogrp.com", /*brand +"vhwong@eurogrp.com,cmchong@eurogrp.com", */ 
+                EmailFrom = "Survey@eurogrp.com",
                 EmailCc = null
             };
 
@@ -45,18 +45,38 @@ namespace MarcomSurvey.Controllers
             switch (brand.ToUpper())
             {
                 case "IT":
-                    return View((object)eSurvey);
-                    
-                case "YUNNAM":
-                    return Redirect("http://www.yunnamhaircare.com/");
+                   // return View((object)eSurvey);
 
-                case "LONDON":
-                    return Redirect("http://www.londonweight.com/html/singapore/");
-                    
+                case "YN":
+                    return Content("<h2>Success: " + brand + " Survey is Successful!</h2>");
+                    //return View((object)eSurvey);
+
+                case "LWM":
+                    return Content("<h2>Success: " + brand + " Survey is Successful!</h2>");
+                  //  return View((object)eSurvey);
+
+                case "NYSS":
+                    return Content("<h2>Success: " + brand + " Survey is Successful!</h2>");
+                //  return View((object)eSurvey);
+
+                case "JS":
+                    return Content("<h2>Success: " + brand + " Survey is Successful!</h2>");
+                //  return View((object)eSurvey);
+
+
+                case "DORRA":
+                    return Content("<h2>Success: " + brand + " Survey is Successful!</h2>");
+                //  return View((object)eSurvey);
+
+                case "SKR":
+                    return Content("<h2>Success: " + brand + " Survey is Successful!</h2>");
+                //  return View((object)eSurvey);
+
+
                 default:
                     return Content("<h2>Error: " + brand + " is invalid Brand Name!</h2>");
             }
-            
+           //return Content("Thank You!");
         }
 
     }
